@@ -139,6 +139,17 @@
 		D34465EA1712363A00255FA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D34465E91712363A00255FA3 /* AppDelegate.m */; };
 		D34465ED1712363A00255FA3 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D34465EC1712363A00255FA3 /* HelloWorldLayer.m */; };
 		D34465F01712363A00255FA3 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D34465EF1712363A00255FA3 /* IntroLayer.m */; };
+		D34466011712365100255FA3 /* Bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465F61712365100255FA3 /* Bg.png */; };
+		D34466021712365100255FA3 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465F71712365100255FA3 /* bullet.png */; };
+		D34466031712365100255FA3 /* enemy.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465F81712365100255FA3 /* enemy.png */; };
+		D34466041712365100255FA3 /* font_red_14.fnt in Resources */ = {isa = PBXBuildFile; fileRef = D34465F91712365100255FA3 /* font_red_14.fnt */; };
+		D34466051712365100255FA3 /* font_red_14.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465FA1712365100255FA3 /* font_red_14.png */; };
+		D34466061712365100255FA3 /* icon_gold.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465FB1712365100255FA3 /* icon_gold.png */; };
+		D34466071712365100255FA3 /* icon_HP.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465FC1712365100255FA3 /* icon_HP.png */; };
+		D34466081712365100255FA3 /* open_spot.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465FD1712365100255FA3 /* open_spot.png */; };
+		D34466091712365100255FA3 /* tower.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465FE1712365100255FA3 /* tower.png */; };
+		D344660A1712365100255FA3 /* TowersPosition.plist in Resources */ = {isa = PBXBuildFile; fileRef = D34465FF1712365100255FA3 /* TowersPosition.plist */; };
+		D344660B1712365100255FA3 /* Waves.plist in Resources */ = {isa = PBXBuildFile; fileRef = D34466001712365100255FA3 /* Waves.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -420,6 +431,17 @@
 		D34465EC1712363A00255FA3 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		D34465EE1712363A00255FA3 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		D34465EF1712363A00255FA3 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		D34465F61712365100255FA3 /* Bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bg.png; sourceTree = "<group>"; };
+		D34465F71712365100255FA3 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
+		D34465F81712365100255FA3 /* enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy.png; sourceTree = "<group>"; };
+		D34465F91712365100255FA3 /* font_red_14.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = font_red_14.fnt; sourceTree = "<group>"; };
+		D34465FA1712365100255FA3 /* font_red_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = font_red_14.png; sourceTree = "<group>"; };
+		D34465FB1712365100255FA3 /* icon_gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_gold.png; sourceTree = "<group>"; };
+		D34465FC1712365100255FA3 /* icon_HP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_HP.png; sourceTree = "<group>"; };
+		D34465FD1712365100255FA3 /* open_spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open_spot.png; sourceTree = "<group>"; };
+		D34465FE1712365100255FA3 /* tower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tower.png; sourceTree = "<group>"; };
+		D34465FF1712365100255FA3 /* TowersPosition.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TowersPosition.plist; sourceTree = "<group>"; };
+		D34466001712365100255FA3 /* Waves.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Waves.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -494,6 +516,17 @@
 		D344645B1712363800255FA3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D34465F61712365100255FA3 /* Bg.png */,
+				D34465F71712365100255FA3 /* bullet.png */,
+				D34465F81712365100255FA3 /* enemy.png */,
+				D34465F91712365100255FA3 /* font_red_14.fnt */,
+				D34465FA1712365100255FA3 /* font_red_14.png */,
+				D34465FB1712365100255FA3 /* icon_gold.png */,
+				D34465FC1712365100255FA3 /* icon_HP.png */,
+				D34465FD1712365100255FA3 /* open_spot.png */,
+				D34465FE1712365100255FA3 /* tower.png */,
+				D34465FF1712365100255FA3 /* TowersPosition.plist */,
+				D34466001712365100255FA3 /* Waves.plist */,
 				D344645C1712363800255FA3 /* Default.png */,
 				D344645E1712363800255FA3 /* Default@2x.png */,
 				D34464601712363800255FA3 /* Default-568h@2x.png */,
@@ -933,6 +966,17 @@
 				D344646F1712363800255FA3 /* Icon@2x.png in Resources */,
 				D34464721712363800255FA3 /* iTunesArtwork in Resources */,
 				D34465C81712363A00255FA3 /* ChangeLog in Resources */,
+				D34466011712365100255FA3 /* Bg.png in Resources */,
+				D34466021712365100255FA3 /* bullet.png in Resources */,
+				D34466031712365100255FA3 /* enemy.png in Resources */,
+				D34466041712365100255FA3 /* font_red_14.fnt in Resources */,
+				D34466051712365100255FA3 /* font_red_14.png in Resources */,
+				D34466061712365100255FA3 /* icon_gold.png in Resources */,
+				D34466071712365100255FA3 /* icon_HP.png in Resources */,
+				D34466081712365100255FA3 /* open_spot.png in Resources */,
+				D34466091712365100255FA3 /* tower.png in Resources */,
+				D344660A1712365100255FA3 /* TowersPosition.plist in Resources */,
+				D344660B1712365100255FA3 /* Waves.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

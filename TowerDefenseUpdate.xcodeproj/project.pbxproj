@@ -150,6 +150,12 @@
 		D34466091712365100255FA3 /* tower.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465FE1712365100255FA3 /* tower.png */; };
 		D344660A1712365100255FA3 /* TowersPosition.plist in Resources */ = {isa = PBXBuildFile; fileRef = D34465FF1712365100255FA3 /* TowersPosition.plist */; };
 		D344660B1712365100255FA3 /* Waves.plist in Resources */ = {isa = PBXBuildFile; fileRef = D34466001712365100255FA3 /* Waves.plist */; };
+		D3446612171237DF00255FA3 /* 8bitDungeonLevel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D344660C171237DF00255FA3 /* 8bitDungeonLevel.mp3 */; };
+		D3446613171237DF00255FA3 /* enemy_destroy.wav in Resources */ = {isa = PBXBuildFile; fileRef = D344660D171237DF00255FA3 /* enemy_destroy.wav */; };
+		D3446614171237DF00255FA3 /* enemy_destroy_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D344660E171237DF00255FA3 /* enemy_destroy_2.wav */; };
+		D3446615171237DF00255FA3 /* laser_shoot.wav in Resources */ = {isa = PBXBuildFile; fileRef = D344660F171237DF00255FA3 /* laser_shoot.wav */; };
+		D3446616171237DF00255FA3 /* life_lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = D3446610171237DF00255FA3 /* life_lose.wav */; };
+		D3446617171237DF00255FA3 /* tower_place.wav in Resources */ = {isa = PBXBuildFile; fileRef = D3446611171237DF00255FA3 /* tower_place.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -442,6 +448,12 @@
 		D34465FE1712365100255FA3 /* tower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tower.png; sourceTree = "<group>"; };
 		D34465FF1712365100255FA3 /* TowersPosition.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TowersPosition.plist; sourceTree = "<group>"; };
 		D34466001712365100255FA3 /* Waves.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Waves.plist; sourceTree = "<group>"; };
+		D344660C171237DF00255FA3 /* 8bitDungeonLevel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 8bitDungeonLevel.mp3; sourceTree = "<group>"; };
+		D344660D171237DF00255FA3 /* enemy_destroy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = enemy_destroy.wav; sourceTree = "<group>"; };
+		D344660E171237DF00255FA3 /* enemy_destroy_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = enemy_destroy_2.wav; sourceTree = "<group>"; };
+		D344660F171237DF00255FA3 /* laser_shoot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser_shoot.wav; sourceTree = "<group>"; };
+		D3446610171237DF00255FA3 /* life_lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = life_lose.wav; sourceTree = "<group>"; };
+		D3446611171237DF00255FA3 /* tower_place.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tower_place.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,6 +528,12 @@
 		D344645B1712363800255FA3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D344660C171237DF00255FA3 /* 8bitDungeonLevel.mp3 */,
+				D344660D171237DF00255FA3 /* enemy_destroy.wav */,
+				D344660E171237DF00255FA3 /* enemy_destroy_2.wav */,
+				D344660F171237DF00255FA3 /* laser_shoot.wav */,
+				D3446610171237DF00255FA3 /* life_lose.wav */,
+				D3446611171237DF00255FA3 /* tower_place.wav */,
 				D34465F61712365100255FA3 /* Bg.png */,
 				D34465F71712365100255FA3 /* bullet.png */,
 				D34465F81712365100255FA3 /* enemy.png */,
@@ -977,6 +995,12 @@
 				D34466091712365100255FA3 /* tower.png in Resources */,
 				D344660A1712365100255FA3 /* TowersPosition.plist in Resources */,
 				D344660B1712365100255FA3 /* Waves.plist in Resources */,
+				D3446612171237DF00255FA3 /* 8bitDungeonLevel.mp3 in Resources */,
+				D3446613171237DF00255FA3 /* enemy_destroy.wav in Resources */,
+				D3446614171237DF00255FA3 /* enemy_destroy_2.wav in Resources */,
+				D3446615171237DF00255FA3 /* laser_shoot.wav in Resources */,
+				D3446616171237DF00255FA3 /* life_lose.wav in Resources */,
+				D3446617171237DF00255FA3 /* tower_place.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

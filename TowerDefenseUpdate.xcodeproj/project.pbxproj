@@ -142,7 +142,7 @@
 		D34466011712365100255FA3 /* Bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465F61712365100255FA3 /* Bg.png */; };
 		D34466021712365100255FA3 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465F71712365100255FA3 /* bullet.png */; };
 		D34466031712365100255FA3 /* enemy.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465F81712365100255FA3 /* enemy.png */; };
-		D34466041712365100255FA3 /* font_red_14.fnt in Resources */ = {isa = PBXBuildFile; fileRef = D34465F91712365100255FA3 /* font_red_14.fnt */; };
+		D34466041712365100255FA3 /* font_red.fnt in Resources */ = {isa = PBXBuildFile; fileRef = D34465F91712365100255FA3 /* font_red.fnt */; };
 		D34466051712365100255FA3 /* font_red_14.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465FA1712365100255FA3 /* font_red_14.png */; };
 		D34466061712365100255FA3 /* icon_gold.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465FB1712365100255FA3 /* icon_gold.png */; };
 		D34466071712365100255FA3 /* icon_HP.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465FC1712365100255FA3 /* icon_HP.png */; };
@@ -440,7 +440,7 @@
 		D34465F61712365100255FA3 /* Bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bg.png; sourceTree = "<group>"; };
 		D34465F71712365100255FA3 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
 		D34465F81712365100255FA3 /* enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy.png; sourceTree = "<group>"; };
-		D34465F91712365100255FA3 /* font_red_14.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = font_red_14.fnt; sourceTree = "<group>"; };
+		D34465F91712365100255FA3 /* font_red.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = font_red.fnt; sourceTree = "<group>"; };
 		D34465FA1712365100255FA3 /* font_red_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = font_red_14.png; sourceTree = "<group>"; };
 		D34465FB1712365100255FA3 /* icon_gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_gold.png; sourceTree = "<group>"; };
 		D34465FC1712365100255FA3 /* icon_HP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_HP.png; sourceTree = "<group>"; };
@@ -537,7 +537,7 @@
 				D34465F61712365100255FA3 /* Bg.png */,
 				D34465F71712365100255FA3 /* bullet.png */,
 				D34465F81712365100255FA3 /* enemy.png */,
-				D34465F91712365100255FA3 /* font_red_14.fnt */,
+				D34465F91712365100255FA3 /* font_red.fnt */,
 				D34465FA1712365100255FA3 /* font_red_14.png */,
 				D34465FB1712365100255FA3 /* icon_gold.png */,
 				D34465FC1712365100255FA3 /* icon_HP.png */,
@@ -987,7 +987,7 @@
 				D34466011712365100255FA3 /* Bg.png in Resources */,
 				D34466021712365100255FA3 /* bullet.png in Resources */,
 				D34466031712365100255FA3 /* enemy.png in Resources */,
-				D34466041712365100255FA3 /* font_red_14.fnt in Resources */,
+				D34466041712365100255FA3 /* font_red.fnt in Resources */,
 				D34466051712365100255FA3 /* font_red_14.png in Resources */,
 				D34466061712365100255FA3 /* icon_gold.png in Resources */,
 				D34466071712365100255FA3 /* icon_HP.png in Resources */,
@@ -1229,6 +1229,7 @@
 				D34465F51712363A00255FA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

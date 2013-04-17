@@ -15,6 +15,7 @@
 // HelloWorldLayer
 @interface HelloWorldLayer : CCLayer 
 {
+    NSMutableArray * towerBases;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child

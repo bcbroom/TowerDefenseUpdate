@@ -40,11 +40,21 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
+        
 		// 1 - initialize
+        
+        self.touchEnabled = YES;
+        CGSize winSize = [CCDirector sharedDirector].winSize;
         
         // 2 - set background
         
+        CCSprite * background = [CCSprite spriteWithFile:@"bg.png"];
+        [self addChild:background];
+        [background setPosition:ccp(winSize.width/2,winSize.height/2)];
+        
         // 3 - load tower positions
+        
+        [self loadTowerPositions];
         
         // 4 - add waypoints
         
@@ -60,4 +70,20 @@
 	}
 	return self;
 }
+
+-(void)loadTowerPositions
+{
+    NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"TowersPosition" ofType:@"plist"];
+    NSArray * towerPositions = [NSArray arrayWithContentsOfFile:plistPath];
+    towerBases = [[NSMutableArray alloc] initWithCapacity:10];
+    
+    for(NSDictionary * towerPos in towerPositions)
+    {
+        CCSprite * towerBase = [CCSprite spriteWithFile:@"open_spot.png"];
+        [self addChild:towerBase];
+        [towerBase setPosition:ccp([[towerPos objectForKey:@"x"] intValue],[[towerPos objectForKey:@"y"] intValue])];
+        [towerBases addObject:towerBase];
+    }    
+}
+
 @end

@@ -139,7 +139,7 @@
 		D34465EA1712363A00255FA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D34465E91712363A00255FA3 /* AppDelegate.m */; };
 		D34465ED1712363A00255FA3 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D34465EC1712363A00255FA3 /* HelloWorldLayer.m */; };
 		D34465F01712363A00255FA3 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D34465EF1712363A00255FA3 /* IntroLayer.m */; };
-		D34466011712365100255FA3 /* Bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465F61712365100255FA3 /* Bg.png */; };
+		D34466011712365100255FA3 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465F61712365100255FA3 /* bg.png */; };
 		D34466021712365100255FA3 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465F71712365100255FA3 /* bullet.png */; };
 		D34466031712365100255FA3 /* enemy.png in Resources */ = {isa = PBXBuildFile; fileRef = D34465F81712365100255FA3 /* enemy.png */; };
 		D34466041712365100255FA3 /* font_red.fnt in Resources */ = {isa = PBXBuildFile; fileRef = D34465F91712365100255FA3 /* font_red.fnt */; };
@@ -156,6 +156,15 @@
 		D3446615171237DF00255FA3 /* laser_shoot.wav in Resources */ = {isa = PBXBuildFile; fileRef = D344660F171237DF00255FA3 /* laser_shoot.wav */; };
 		D3446616171237DF00255FA3 /* life_lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = D3446610171237DF00255FA3 /* life_lose.wav */; };
 		D3446617171237DF00255FA3 /* tower_place.wav in Resources */ = {isa = PBXBuildFile; fileRef = D3446611171237DF00255FA3 /* tower_place.wav */; };
+		D3FD272D171E3D19007DD3F6 /* bg-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FD2724171E3D19007DD3F6 /* bg-hd.png */; };
+		D3FD272E171E3D19007DD3F6 /* bullet-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FD2725171E3D19007DD3F6 /* bullet-hd.png */; };
+		D3FD272F171E3D19007DD3F6 /* enemy-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FD2726171E3D19007DD3F6 /* enemy-hd.png */; };
+		D3FD2730171E3D19007DD3F6 /* font_red_28.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FD2727171E3D19007DD3F6 /* font_red_28.png */; };
+		D3FD2731171E3D19007DD3F6 /* font_red-hd.fnt in Resources */ = {isa = PBXBuildFile; fileRef = D3FD2728171E3D19007DD3F6 /* font_red-hd.fnt */; };
+		D3FD2732171E3D19007DD3F6 /* icon_gold-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FD2729171E3D19007DD3F6 /* icon_gold-hd.png */; };
+		D3FD2733171E3D19007DD3F6 /* icon_HP-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FD272A171E3D19007DD3F6 /* icon_HP-hd.png */; };
+		D3FD2734171E3D19007DD3F6 /* open_spot-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FD272B171E3D19007DD3F6 /* open_spot-hd.png */; };
+		D3FD2735171E3D19007DD3F6 /* tower-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FD272C171E3D19007DD3F6 /* tower-hd.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -437,7 +446,7 @@
 		D34465EC1712363A00255FA3 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		D34465EE1712363A00255FA3 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		D34465EF1712363A00255FA3 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
-		D34465F61712365100255FA3 /* Bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bg.png; sourceTree = "<group>"; };
+		D34465F61712365100255FA3 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		D34465F71712365100255FA3 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
 		D34465F81712365100255FA3 /* enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy.png; sourceTree = "<group>"; };
 		D34465F91712365100255FA3 /* font_red.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = font_red.fnt; sourceTree = "<group>"; };
@@ -454,6 +463,15 @@
 		D344660F171237DF00255FA3 /* laser_shoot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser_shoot.wav; sourceTree = "<group>"; };
 		D3446610171237DF00255FA3 /* life_lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = life_lose.wav; sourceTree = "<group>"; };
 		D3446611171237DF00255FA3 /* tower_place.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tower_place.wav; sourceTree = "<group>"; };
+		D3FD2724171E3D19007DD3F6 /* bg-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-hd.png"; sourceTree = "<group>"; };
+		D3FD2725171E3D19007DD3F6 /* bullet-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bullet-hd.png"; sourceTree = "<group>"; };
+		D3FD2726171E3D19007DD3F6 /* enemy-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "enemy-hd.png"; sourceTree = "<group>"; };
+		D3FD2727171E3D19007DD3F6 /* font_red_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = font_red_28.png; sourceTree = "<group>"; };
+		D3FD2728171E3D19007DD3F6 /* font_red-hd.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "font_red-hd.fnt"; sourceTree = "<group>"; };
+		D3FD2729171E3D19007DD3F6 /* icon_gold-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_gold-hd.png"; sourceTree = "<group>"; };
+		D3FD272A171E3D19007DD3F6 /* icon_HP-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_HP-hd.png"; sourceTree = "<group>"; };
+		D3FD272B171E3D19007DD3F6 /* open_spot-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open_spot-hd.png"; sourceTree = "<group>"; };
+		D3FD272C171E3D19007DD3F6 /* tower-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower-hd.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -528,13 +546,22 @@
 		D344645B1712363800255FA3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D3FD2724171E3D19007DD3F6 /* bg-hd.png */,
+				D3FD2725171E3D19007DD3F6 /* bullet-hd.png */,
+				D3FD2726171E3D19007DD3F6 /* enemy-hd.png */,
+				D3FD2727171E3D19007DD3F6 /* font_red_28.png */,
+				D3FD2728171E3D19007DD3F6 /* font_red-hd.fnt */,
+				D3FD2729171E3D19007DD3F6 /* icon_gold-hd.png */,
+				D3FD272A171E3D19007DD3F6 /* icon_HP-hd.png */,
+				D3FD272B171E3D19007DD3F6 /* open_spot-hd.png */,
+				D3FD272C171E3D19007DD3F6 /* tower-hd.png */,
 				D344660C171237DF00255FA3 /* 8bitDungeonLevel.mp3 */,
 				D344660D171237DF00255FA3 /* enemy_destroy.wav */,
 				D344660E171237DF00255FA3 /* enemy_destroy_2.wav */,
 				D344660F171237DF00255FA3 /* laser_shoot.wav */,
 				D3446610171237DF00255FA3 /* life_lose.wav */,
 				D3446611171237DF00255FA3 /* tower_place.wav */,
-				D34465F61712365100255FA3 /* Bg.png */,
+				D34465F61712365100255FA3 /* bg.png */,
 				D34465F71712365100255FA3 /* bullet.png */,
 				D34465F81712365100255FA3 /* enemy.png */,
 				D34465F91712365100255FA3 /* font_red.fnt */,
@@ -984,7 +1011,7 @@
 				D344646F1712363800255FA3 /* Icon@2x.png in Resources */,
 				D34464721712363800255FA3 /* iTunesArtwork in Resources */,
 				D34465C81712363A00255FA3 /* ChangeLog in Resources */,
-				D34466011712365100255FA3 /* Bg.png in Resources */,
+				D34466011712365100255FA3 /* bg.png in Resources */,
 				D34466021712365100255FA3 /* bullet.png in Resources */,
 				D34466031712365100255FA3 /* enemy.png in Resources */,
 				D34466041712365100255FA3 /* font_red.fnt in Resources */,
@@ -1001,6 +1028,15 @@
 				D3446615171237DF00255FA3 /* laser_shoot.wav in Resources */,
 				D3446616171237DF00255FA3 /* life_lose.wav in Resources */,
 				D3446617171237DF00255FA3 /* tower_place.wav in Resources */,
+				D3FD272D171E3D19007DD3F6 /* bg-hd.png in Resources */,
+				D3FD272E171E3D19007DD3F6 /* bullet-hd.png in Resources */,
+				D3FD272F171E3D19007DD3F6 /* enemy-hd.png in Resources */,
+				D3FD2730171E3D19007DD3F6 /* font_red_28.png in Resources */,
+				D3FD2731171E3D19007DD3F6 /* font_red-hd.fnt in Resources */,
+				D3FD2732171E3D19007DD3F6 /* icon_gold-hd.png in Resources */,
+				D3FD2733171E3D19007DD3F6 /* icon_HP-hd.png in Resources */,
+				D3FD2734171E3D19007DD3F6 /* open_spot-hd.png in Resources */,
+				D3FD2735171E3D19007DD3F6 /* tower-hd.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

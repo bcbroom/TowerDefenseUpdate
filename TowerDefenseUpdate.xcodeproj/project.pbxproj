@@ -165,6 +165,7 @@
 		D3FD2733171E3D19007DD3F6 /* icon_HP-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FD272A171E3D19007DD3F6 /* icon_HP-hd.png */; };
 		D3FD2734171E3D19007DD3F6 /* open_spot-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FD272B171E3D19007DD3F6 /* open_spot-hd.png */; };
 		D3FD2735171E3D19007DD3F6 /* tower-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FD272C171E3D19007DD3F6 /* tower-hd.png */; };
+		D3FD2767172C5F03007DD3F6 /* Tower.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD2766172C5F03007DD3F6 /* Tower.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -472,6 +473,8 @@
 		D3FD272A171E3D19007DD3F6 /* icon_HP-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_HP-hd.png"; sourceTree = "<group>"; };
 		D3FD272B171E3D19007DD3F6 /* open_spot-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open_spot-hd.png"; sourceTree = "<group>"; };
 		D3FD272C171E3D19007DD3F6 /* tower-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower-hd.png"; sourceTree = "<group>"; };
+		D3FD2765172C5F03007DD3F6 /* Tower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tower.h; sourceTree = "<group>"; };
+		D3FD2766172C5F03007DD3F6 /* Tower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tower.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -534,6 +537,8 @@
 				D34465E91712363A00255FA3 /* AppDelegate.m */,
 				D34465EB1712363A00255FA3 /* HelloWorldLayer.h */,
 				D34465EC1712363A00255FA3 /* HelloWorldLayer.m */,
+				D3FD2765172C5F03007DD3F6 /* Tower.h */,
+				D3FD2766172C5F03007DD3F6 /* Tower.m */,
 				D34465EE1712363A00255FA3 /* IntroLayer.h */,
 				D34465EF1712363A00255FA3 /* IntroLayer.m */,
 				D344645B1712363800255FA3 /* Resources */,
@@ -1158,6 +1163,7 @@
 				D34465EA1712363A00255FA3 /* AppDelegate.m in Sources */,
 				D34465ED1712363A00255FA3 /* HelloWorldLayer.m in Sources */,
 				D34465F01712363A00255FA3 /* IntroLayer.m in Sources */,
+				D3FD2767172C5F03007DD3F6 /* Tower.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 
 // Import the interfaces
 #import "HelloWorldLayer.h"
+#import "Tower.h"
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
@@ -17,6 +18,8 @@
 
 // HelloWorldLayer implementation
 @implementation HelloWorldLayer
+
+@synthesize towers;
 
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
 +(CCScene *) scene
@@ -52,8 +55,7 @@
         [self addChild:background];
         [background setPosition:ccp(winSize.width/2,winSize.height/2)];
         
-        // 3 - load tower positions
-        
+        // 3 - load tower positions        
         [self loadTowerPositions];
         
         // 4 - add waypoints
@@ -84,6 +86,33 @@
         [towerBase setPosition:ccp([[towerPos objectForKey:@"x"] intValue],[[towerPos objectForKey:@"y"] intValue])];
         [towerBases addObject:towerBase];
     }    
+}
+
+-(BOOL)canBuyTower
+{
+    return YES;
+}
+
+- (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    
+	for( UITouch *touch in touches ) {
+		CGPoint location = [touch locationInView: [touch view]];
+		
+		location = [[CCDirector sharedDirector] convertToGL: location];
+        
+        for(CCSprite * tb in towerBases)
+        {
+            if([self canBuyTower] && CGRectContainsPoint([tb boundingBox],location) && !tb.userData)
+			{
+                //We will spend our gold later.
+                
+                Tower *tower = [Tower nodeWithTheGame:self location:tb.position];
+                [towers addObject:tower];
+                tb.userData = (__bridge void *)(tower);
+			}
+		}
+	}
 }
 
 @end

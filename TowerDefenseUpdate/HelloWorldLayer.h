@@ -15,8 +15,10 @@
 // HelloWorldLayer
 @interface HelloWorldLayer : CCLayer 
 {
-    NSMutableArray * towerBases;
+    NSMutableArray *towerBases;
 }
+
+@property (nonatomic,strong) NSMutableArray *towers;
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
 +(CCScene *) scene;

@@ -167,6 +167,7 @@
 		D3FD2735171E3D19007DD3F6 /* tower-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FD272C171E3D19007DD3F6 /* tower-hd.png */; };
 		D3FD2767172C5F03007DD3F6 /* Tower.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD2766172C5F03007DD3F6 /* Tower.m */; };
 		D3FD276A172CB77C007DD3F6 /* Waypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD2769172CB77C007DD3F6 /* Waypoint.m */; };
+		D3FD276D172DA377007DD3F6 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD276C172DA377007DD3F6 /* Enemy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -478,6 +479,8 @@
 		D3FD2766172C5F03007DD3F6 /* Tower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tower.m; sourceTree = "<group>"; };
 		D3FD2768172CB77C007DD3F6 /* Waypoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Waypoint.h; sourceTree = "<group>"; };
 		D3FD2769172CB77C007DD3F6 /* Waypoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Waypoint.m; sourceTree = "<group>"; };
+		D3FD276B172DA377007DD3F6 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
+		D3FD276C172DA377007DD3F6 /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -540,6 +543,8 @@
 				D34465E91712363A00255FA3 /* AppDelegate.m */,
 				D34465EB1712363A00255FA3 /* HelloWorldLayer.h */,
 				D34465EC1712363A00255FA3 /* HelloWorldLayer.m */,
+				D3FD276B172DA377007DD3F6 /* Enemy.h */,
+				D3FD276C172DA377007DD3F6 /* Enemy.m */,
 				D3FD2765172C5F03007DD3F6 /* Tower.h */,
 				D3FD2768172CB77C007DD3F6 /* Waypoint.h */,
 				D3FD2769172CB77C007DD3F6 /* Waypoint.m */,
@@ -1170,6 +1175,7 @@
 				D34465F01712363A00255FA3 /* IntroLayer.m in Sources */,
 				D3FD2767172C5F03007DD3F6 /* Tower.m in Sources */,
 				D3FD276A172CB77C007DD3F6 /* Waypoint.m in Sources */,
+				D3FD276D172DA377007DD3F6 /* Enemy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

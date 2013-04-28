@@ -11,6 +11,7 @@
 #import "HelloWorldLayer.h"
 #import "Tower.h"
 #import "Waypoint.h"
+#import "Enemy.h"
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
@@ -22,6 +23,7 @@
 
 @synthesize towers;
 @synthesize waypoints;
+@synthesize enemies;
 
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
 +(CCScene *) scene
@@ -64,8 +66,14 @@
         [self addWaypoints];
         
         // 5 - add enemies
+        enemies = [[NSMutableArray alloc] init];
+        [self loadWave];
         
         // 6 - create wave label
+        ui_wave_lbl = [CCLabelBMFont labelWithString:[NSString stringWithFormat:@"WAVE: %d",wave] fntFile:@"font_red_14.fnt"];
+        [self addChild:ui_wave_lbl z:10];
+        [ui_wave_lbl setPosition:ccp(400,winSize.height-12)];
+        [ui_wave_lbl setAnchorPoint:ccp(0,0.5)];
         
         // 7 - player lives
         
@@ -119,6 +127,43 @@
     waypoint6.nextWaypoint =waypoint5;
 }
 
+-(BOOL)loadWave {
+    NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"Waves" ofType:@"plist"];
+    NSArray * waveData = [NSArray arrayWithContentsOfFile:plistPath];
+    
+    if(wave >= [waveData count])
+    {
+        return NO;
+    }
+    
+    NSArray * currentWaveData =[NSArray arrayWithArray:[waveData objectAtIndex:wave]];
+    
+    for(NSDictionary * enemyData in currentWaveData)
+    {
+        Enemy * enemy = [Enemy nodeWithTheGame:self];
+        [enemies addObject:enemy];
+        [enemy schedule:@selector(doActivate) interval:[[enemyData objectForKey:@"spawnTime"]floatValue]];
+    }
+    
+    wave++;
+    [ui_wave_lbl setString:[NSString stringWithFormat:@"WAVE: %d",wave]];
+    
+    return YES;
+    
+}
+
+-(void)enemyGotKilled {
+    if ([enemies count]<=0) //If there are no more enemies.
+    {
+        if(![self loadWave])
+        {
+            NSLog(@"You win!");
+            [[CCDirector sharedDirector] replaceScene:[CCTransitionSplitCols transitionWithDuration:1 scene:[HelloWorldLayer scene]]];
+        }
+    }
+}
+
+
 
 -(BOOL)canBuyTower
 {
@@ -145,6 +190,18 @@
 			}
 		}
 	}
+}
+
+-(BOOL)circle:(CGPoint) circlePoint withRadius:(float) radius collisionWithCircle:(CGPoint) circlePointTwo collisionCircleRadius:(float) radiusTwo {
+    float xdif = circlePoint.x - circlePointTwo.x;
+    float ydif = circlePoint.y - circlePointTwo.y;
+    
+    float distance = sqrt(xdif*xdif+ydif*ydif);
+    
+    if(distance <= radius+radiusTwo)
+        return YES;
+    
+    return NO;
 }
 
 @end

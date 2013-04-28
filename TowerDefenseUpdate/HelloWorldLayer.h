@@ -16,12 +16,19 @@
 @interface HelloWorldLayer : CCLayer 
 {
     NSMutableArray *towerBases;
+    int wave;
+    CCLabelBMFont *ui_wave_lbl;
 }
 
 @property (nonatomic,strong) NSMutableArray *towers;
 @property (nonatomic,strong) NSMutableArray *waypoints;
+@property (nonatomic,strong) NSMutableArray *enemies;
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
 +(CCScene *) scene;
+
+-(BOOL)circle:(CGPoint)circlePoint withRadius:(float)radius collisionWithCircle:(CGPoint)circlePointTwo collisionCircleRadius:(float)radiusTwo;
+-(void) enemyGotKilled;
+-(void) getHpDamage;
 
 @end

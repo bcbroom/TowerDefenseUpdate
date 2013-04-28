@@ -10,6 +10,7 @@
 // Import the interfaces
 #import "HelloWorldLayer.h"
 #import "Tower.h"
+#import "Waypoint.h"
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
@@ -20,6 +21,7 @@
 @implementation HelloWorldLayer
 
 @synthesize towers;
+@synthesize waypoints;
 
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
 +(CCScene *) scene
@@ -59,6 +61,7 @@
         [self loadTowerPositions];
         
         // 4 - add waypoints
+        [self addWaypoints];
         
         // 5 - add enemies
         
@@ -87,6 +90,35 @@
         [towerBases addObject:towerBase];
     }    
 }
+
+-(void)addWaypoints
+{
+    waypoints = [[NSMutableArray alloc] init];
+    
+    Waypoint * waypoint1 = [Waypoint nodeWithTheGame:self location:ccp(420,35)];
+    [waypoints addObject:waypoint1];
+    
+    Waypoint * waypoint2 = [Waypoint nodeWithTheGame:self location:ccp(35,35)];
+    [waypoints addObject:waypoint2];
+    waypoint2.nextWaypoint =waypoint1;
+    
+    Waypoint * waypoint3 = [Waypoint nodeWithTheGame:self location:ccp(35,130)];
+    [waypoints addObject:waypoint3];
+    waypoint3.nextWaypoint =waypoint2;
+    
+    Waypoint * waypoint4 = [Waypoint nodeWithTheGame:self location:ccp(445,130)];
+    [waypoints addObject:waypoint4];
+    waypoint4.nextWaypoint =waypoint3;
+    
+    Waypoint * waypoint5 = [Waypoint nodeWithTheGame:self location:ccp(445,220)];
+    [waypoints addObject:waypoint5];
+    waypoint5.nextWaypoint =waypoint4;
+    
+    Waypoint * waypoint6 = [Waypoint nodeWithTheGame:self location:ccp(-40,220)];
+    [waypoints addObject:waypoint6];
+    waypoint6.nextWaypoint =waypoint5;
+}
+
 
 -(BOOL)canBuyTower
 {

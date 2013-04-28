@@ -19,6 +19,7 @@
 }
 
 @property (nonatomic,strong) NSMutableArray *towers;
+@property (nonatomic,strong) NSMutableArray *waypoints;
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
 +(CCScene *) scene;

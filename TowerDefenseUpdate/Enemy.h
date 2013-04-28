@@ -11,6 +11,7 @@
     float walkingSpeed;
     Waypoint *destinationWaypoint;
     BOOL active;
+    NSMutableArray *attackedBy;
 }
 
 @property (nonatomic,assign) HelloWorldLayer *theGame;
@@ -20,6 +21,9 @@
 -(id)initWithTheGame:(HelloWorldLayer *)_game;
 -(void)doActivate;
 -(void)getRemoved;
+-(void)getAttacked:(Tower *)attacker;
+-(void)gotLostSight:(Tower *)attacker;
+-(void)getDamaged:(int)damage;
 
 
 @end

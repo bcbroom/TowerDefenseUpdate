@@ -9,6 +9,8 @@
     int attackRange;
     int damage;
     float fireRate;
+    BOOL attacking;
+    Enemy *chosenEnemy;
 }
 
 @property (nonatomic,assign) HelloWorldLayer *theGame;
@@ -16,5 +18,6 @@
 
 +(id)nodeWithTheGame:(HelloWorldLayer*)_game location:(CGPoint)location;
 -(id)initWithTheGame:(HelloWorldLayer *)_game location:(CGPoint)location;
+-(void)targetKilled;
 
 @end

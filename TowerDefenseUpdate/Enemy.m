@@ -35,6 +35,8 @@
         CGPoint pos = waypoint.myPosition;
         myPosition = pos;
         
+        attackedBy = [[NSMutableArray alloc] initWithCapacity:5];
+        
         [mySprite setPosition:pos];
 		
         [theGame addChild:self];
@@ -83,11 +85,35 @@
 
 -(void)getRemoved
 {
+    for(Tower * attacker in attackedBy)
+    {
+        [attacker targetKilled];
+    }
+    
     [self.parent removeChild:self cleanup:YES];
     [theGame.enemies removeObject:self];
     
     //Notify the game that we killed an enemy so we can check if we can send another wave
     [theGame enemyGotKilled];
+}
+
+-(void)getAttacked:(Tower *)attacker
+{
+    [attackedBy addObject:attacker];
+}
+
+-(void)gotLostSight:(Tower *)attacker
+{
+    [attackedBy removeObject:attacker];
+}
+
+-(void)getDamaged:(int)damage
+{
+    currentHp -=damage;
+    if(currentHp <=0)
+    {
+        [self getRemoved];
+    }
 }
 
 - (void)draw

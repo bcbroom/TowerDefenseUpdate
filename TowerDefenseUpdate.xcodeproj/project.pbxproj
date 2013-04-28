@@ -1215,6 +1215,7 @@
 				GCC_PREFIX_HEADER = TowerDefenseUpdate/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"TowerDefenseUpdate/libs/kazmath/include\"";
 				INFOPLIST_FILE = TowerDefenseUpdate/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
@@ -1235,6 +1236,7 @@
 				GCC_PREFIX_HEADER = TowerDefenseUpdate/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"TowerDefenseUpdate/libs/kazmath/include\"";
 				INFOPLIST_FILE = TowerDefenseUpdate/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",

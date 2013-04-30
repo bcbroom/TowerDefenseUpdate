@@ -82,6 +82,11 @@
         [ui_hp_lbl setPosition:ccp(35,winSize.height-12)];
         
         // 8 - gold
+        playerGold = 1000;
+        ui_gold_lbl = [CCLabelBMFont labelWithString:[NSString stringWithFormat:@"GOLD: %d",playerGold] fntFile:@"font_red_14.fnt"];
+        [self addChild:ui_gold_lbl z:10];
+        [ui_gold_lbl setPosition:ccp(135,winSize.height-12)];
+        [ui_gold_lbl setAnchorPoint:ccp(0,0.5)];
         
         // 9 - sound
 	}
@@ -182,10 +187,15 @@
     }
 }
 
+-(void)awardGold:(int)gold {
+    playerGold += gold;
+    [ui_gold_lbl setString:[NSString stringWithFormat:@"GOLD: %d",playerGold]];
+}
 
--(BOOL)canBuyTower
-{
-    return YES;
+-(BOOL)canBuyTower {
+    if (playerGold - kTOWER_COST >=0)
+        return YES;
+    return NO;
 }
 
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -200,7 +210,8 @@
         {
             if([self canBuyTower] && CGRectContainsPoint([tb boundingBox],location) && !tb.userData)
 			{
-                //We will spend our gold later.
+                playerGold -= kTOWER_COST;
+                [ui_gold_lbl setString:[NSString stringWithFormat:@"GOLD: %d",playerGold]];
                 
                 Tower *tower = [Tower nodeWithTheGame:self location:tb.position];
                 [towers addObject:tower];

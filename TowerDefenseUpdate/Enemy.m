@@ -112,6 +112,7 @@
     currentHp -=damage;
     if(currentHp <=0)
     {
+        [theGame awardGold:200];
         [self getRemoved];
     }
 }

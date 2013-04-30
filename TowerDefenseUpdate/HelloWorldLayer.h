@@ -21,6 +21,8 @@
     int playerHp;
     CCLabelBMFont *ui_hp_lbl;
     BOOL gameEnded;
+    int playerGold;
+    CCLabelBMFont *ui_gold_lbl;
 }
 
 @property (nonatomic,strong) NSMutableArray *towers;
@@ -34,5 +36,6 @@
 -(void) enemyGotKilled;
 -(void) getHpDamage;
 -(void)doGameOver;
+-(void)awardGold:(int)gold;
 
 @end

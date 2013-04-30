@@ -109,6 +109,7 @@
 
 -(void)getDamaged:(int)damage
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"laser_shoot.wav"];
     currentHp -=damage;
     if(currentHp <=0)
     {

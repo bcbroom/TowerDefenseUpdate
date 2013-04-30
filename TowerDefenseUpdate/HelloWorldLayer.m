@@ -12,6 +12,7 @@
 #import "Tower.h"
 #import "Waypoint.h"
 #import "Enemy.h"
+#import "SimpleAudioEngine.h"
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
@@ -89,6 +90,7 @@
         [ui_gold_lbl setAnchorPoint:ccp(0,0.5)];
         
         // 9 - sound
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"8bitDungeonLevel.mp3" loop:YES];
 	}
 	return self;
 }
@@ -173,6 +175,7 @@
 }
 
 -(void)getHpDamage {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"life_lose.wav"];
     playerHp--;
     [ui_hp_lbl setString:[NSString stringWithFormat:@"HP: %d",playerHp]];
     if (playerHp <=0) {
@@ -213,6 +216,7 @@
                 playerGold -= kTOWER_COST;
                 [ui_gold_lbl setString:[NSString stringWithFormat:@"GOLD: %d",playerGold]];
                 
+                [[SimpleAudioEngine sharedEngine] playEffect:@"tower_place.wav"];
                 Tower *tower = [Tower nodeWithTheGame:self location:tb.position];
                 [towers addObject:tower];
                 tb.userData = (__bridge void *)(tower);

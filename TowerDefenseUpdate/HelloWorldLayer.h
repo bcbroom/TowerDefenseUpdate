@@ -18,6 +18,9 @@
     NSMutableArray *towerBases;
     int wave;
     CCLabelBMFont *ui_wave_lbl;
+    int playerHp;
+    CCLabelBMFont *ui_hp_lbl;
+    BOOL gameEnded;
 }
 
 @property (nonatomic,strong) NSMutableArray *towers;
@@ -30,5 +33,6 @@
 -(BOOL)circle:(CGPoint)circlePoint withRadius:(float)radius collisionWithCircle:(CGPoint)circlePointTwo collisionCircleRadius:(float)radiusTwo;
 -(void) enemyGotKilled;
 -(void) getHpDamage;
+-(void)doGameOver;
 
 @end

@@ -76,6 +76,10 @@
         [ui_wave_lbl setAnchorPoint:ccp(0,0.5)];
         
         // 7 - player lives
+        playerHp = 5;
+        ui_hp_lbl = [CCLabelBMFont labelWithString:[NSString stringWithFormat:@"HP: %d",playerHp] fntFile:@"font_red_14.fnt"];
+        [self addChild:ui_hp_lbl z:10];
+        [ui_hp_lbl setPosition:ccp(35,winSize.height-12)];
         
         // 8 - gold
         
@@ -163,6 +167,20 @@
     }
 }
 
+-(void)getHpDamage {
+    playerHp--;
+    [ui_hp_lbl setString:[NSString stringWithFormat:@"HP: %d",playerHp]];
+    if (playerHp <=0) {
+        [self doGameOver];
+    }
+}
+
+-(void)doGameOver {
+    if (!gameEnded) {
+        gameEnded = YES;
+        [[CCDirector sharedDirector] replaceScene:[CCTransitionRotoZoom transitionWithDuration:1 scene:[HelloWorldLayer scene]]];
+    }
+}
 
 
 -(BOOL)canBuyTower

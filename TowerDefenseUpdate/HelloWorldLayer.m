@@ -71,20 +71,20 @@
         [self loadWave];
         
         // 6 - create wave label
-        ui_wave_lbl = [CCLabelBMFont labelWithString:[NSString stringWithFormat:@"WAVE: %d",wave] fntFile:@"font_red_14.fnt"];
+        ui_wave_lbl = [CCLabelBMFont labelWithString:[NSString stringWithFormat:@"WAVE: %d",wave] fntFile:@"font_red.fnt"];
         [self addChild:ui_wave_lbl z:10];
         [ui_wave_lbl setPosition:ccp(400,winSize.height-12)];
         [ui_wave_lbl setAnchorPoint:ccp(0,0.5)];
         
         // 7 - player lives
         playerHp = 5;
-        ui_hp_lbl = [CCLabelBMFont labelWithString:[NSString stringWithFormat:@"HP: %d",playerHp] fntFile:@"font_red_14.fnt"];
+        ui_hp_lbl = [CCLabelBMFont labelWithString:[NSString stringWithFormat:@"HP: %d",playerHp] fntFile:@"font_red.fnt"];
         [self addChild:ui_hp_lbl z:10];
         [ui_hp_lbl setPosition:ccp(35,winSize.height-12)];
         
         // 8 - gold
         playerGold = 1000;
-        ui_gold_lbl = [CCLabelBMFont labelWithString:[NSString stringWithFormat:@"GOLD: %d",playerGold] fntFile:@"font_red_14.fnt"];
+        ui_gold_lbl = [CCLabelBMFont labelWithString:[NSString stringWithFormat:@"GOLD: %d",playerGold] fntFile:@"font_red.fnt"];
         [self addChild:ui_gold_lbl z:10];
         [ui_gold_lbl setPosition:ccp(135,winSize.height-12)];
         [ui_gold_lbl setAnchorPoint:ccp(0,0.5)];
